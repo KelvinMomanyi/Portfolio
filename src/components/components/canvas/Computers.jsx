@@ -1,5 +1,5 @@
-import {Suspense, useEffect, useState,} from 'react'
-import {Canvas} from '@react-three/fiber'
+import {Suspense, useEffect, useState, useRef} from 'react'
+import {Canvas, useFrame} from '@react-three/fiber'
 import {OrbitControls, Preload , SpotLight, useGLTF} from '@react-three/drei'
 import CanvasLoader from '../Loader'
 
@@ -7,16 +7,18 @@ import CanvasLoader from '../Loader'
 
 
 const Computers = ({isMobile}) => {
-  const computer = useGLTF('./public/desktop_pc/scene.gltf')
+  const computer = useGLTF('./public/desktop_pc/comp.glb')
+
+  
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor='black'/> 
-      <pointLight intensity={1}/>
+      <pointLight intensity={0.05}/>
       <SpotLight 
       position={[-29, 50, 10]}
       angle={0.12}
       penumbra={1}
-      intensity={1}
+      intensity={0.3}
       castShadow
       shadow-mapSize={1024}
       />
@@ -24,14 +26,14 @@ const Computers = ({isMobile}) => {
        object={computer.scene}
        scale={isMobile? 0.7 : 0.75} 
        position={isMobile? [0, -3 , -2.2] : [0, -3.25, -1.5]}
-       rotation={[0, 0, -0.1]}/>
+       rotation={[0, -30, 0]}/>
     </mesh>
   )
 }
 
 const ComputersCanvas =()=>{
   const[isMobile, setIsMobile] = useState(false)
-
+  let r = [10,0,0]
   useEffect(()=>{
     //Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia('(max-width: 500px)');
@@ -54,18 +56,25 @@ const ComputersCanvas =()=>{
   }, [])
 
 
+
+  
+ //[20,3,5]
+
   return(
     <Canvas
       frameloop='demand'
       shadows
-      camera={{position:[20,3,5], fov:25}}
+      camera={{position:r, fov:25}}
       gl={{preserveDrawingBuffer:true}}
+
     >
+      
       <Suspense fallback={<CanvasLoader/>}>  
          <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI/2}
           minPolarAngle={Math.PI/2}/>
+      
           <Computers isMobile={isMobile}/>
       </Suspense>  
      <Preload all/>

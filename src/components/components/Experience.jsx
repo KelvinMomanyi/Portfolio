@@ -10,7 +10,7 @@ import { textVariant } from '../../utils/motion';
 const ExperienceCard =({experience})=>{
  return(
   <VerticalTimelineElement
-   contentStyle={{background:'#1d1836', color:'#ffff'}}
+   contentStyle={{background:'#0000', color:'#ffff'}}
    contentArrowStyle={{borderRight: '7px solid #232631'}}
    date={experience.date}
    iconStyle={{background: experience.iconBg}}
@@ -45,7 +45,7 @@ const ExperienceCard =({experience})=>{
 const Experience = () => {
   return (
     <>
-      <motion.div variant={textVariant()}>
+      <motion.div variant={textVariant()} >
        <p className={styles.sectionSubText}>What I have done so far</p>
        <h2 className={styles.sectionHeadText}>Work Experience</h2>
       </motion.div>
