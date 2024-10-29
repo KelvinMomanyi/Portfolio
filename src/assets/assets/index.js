@@ -6,7 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
+import hotel from "./Royals.JPG";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -20,12 +20,12 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import Law from "./Law101.PNG"
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
+import Yard from './Caryard2.PNG';
 import carrent from "./carrent.png";
 import jobit from "./ecom.png";
 import tripguide from "./tripguide.png";
@@ -59,4 +59,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  hotel,
+  Law,
+  Yard
 };
