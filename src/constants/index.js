@@ -25,7 +25,13 @@ import {
     threejs,
     hotel,
     Law,
-    Yard
+    Yard,
+    AOVBOOST,
+    CarouselSlider,
+    AnimCache,
+    CameraFXPro,
+    ShoesHive,
+    JohnDoe
   } from "../assets/assets";
   
   export const navLinks = [
@@ -211,7 +217,7 @@ import {
         },
       ],
       image: hotel,
-      source_code_link: "https://github.com/KelvinMomanyi/Finance-Dashboard",
+      source_code_link: "https://royal-hotels.web.app/",
     },
     {
       name: "Finance Dashboard",
@@ -263,35 +269,11 @@ import {
       image: jobit,
       source_code_link: "https://classyelegance.netlify.app",
     },
-    {
-      name: "Law Firm Consultancy App",
-      description:
-        "Law firms guide clients through legal processes, advocate on their behalf in court, and provide counsel to help them navigate complex legal issues. Dedicated to upholding justice and protecting clients' rights, law firms strive to achieve favorable outcomes and deliver ethical, effective legal solutions",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "typescript",
-          color: "blue-text-gradient",
-        },
-      ],
-      image: Law,
-      source_code_link: "https://kinyakiokeyo.com/",
-    },
+    
     {
       name: "Car Selling App",
       description:
-        "A car selling app is a digital platform that connects buyers and sellers of new and used vehicles, offering a convenient and efficient way to explore, compare, and purchase cars. With a comprehensive listing of cars from various makes, models, and price ranges, the app allows users to filter by preferences, view high-quality images, and access detailed car specification",
+        "A car selling app is a digital platform that connects buyers and sellers of new and used vehicles, offering a convenient and efficient way to explore, compare, and purchase cars.",
       tags: [
         {
           name: "react",
@@ -314,12 +296,62 @@ import {
       source_code_link: "https://riftcars.netlify.app/",
     },
     {
-      name: "Travel App",
+      name: "ShoesHive",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "PASSWORD - 0000,  A well designed shopify website that displays shoes for sale in shopify, configured for use in shopify",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "html",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "liquid",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: ShoesHive,
+      source_code_link: "https://shoeshive.myshopify.com/",
+    },
+    // {
+    //   name: "John Doe",
+    //   description:
+    //     "A portfolio website template for use by designers, developers and photographers. Its a ready to customize website that can be used for such purposes",
+    //   tags: [
+    //     {
+    //       name: "html",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "Javascript",
+    //       color: "pink-text-gradient",
+    //     }
+    //   ],
+    //   image: JohnDoe,
+    //   source_code_link: "https://john-doe-8a217.web.app/",
+    // },
+    {
+      name: "AOVBoost",
+      description:
+        "AI-powered cross-sell tool that helps merchants attain more AOV with smart product recommendations.",
+      tags: [
+        {
+          name: "react",
           color: "blue-text-gradient",
         },
         {
@@ -330,10 +362,86 @@ import {
           name: "css",
           color: "pink-text-gradient",
         },
+        {
+          name: "remix",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "liquid",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "node-js",
+          color: "pink-text-gradient",
+        }
       ],
-      image: tripguide,
-      source_code_link: "https://travel-landing-page-livid.vercel.app/",
+      image: AOVBOOST,
+      source_code_link: "https://apps.shopify.com/aovboost-1?st_source=autocomplete&surface_detail=autocomplete_apps",
+    },
+    {
+      name: "Carousel Slider",
+      description:
+        "A good carousel slider that showcases products in a sleek slider. Make engagement and drive sales with easy-to-use customization",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "remix",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "liquid",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "node-js",
+          color: "pink-text-gradient",
+        }
+      ],
+      image: CarouselSlider,
+      source_code_link: "https://apps.shopify.com/carousel-slider?surface_intra_position=1&surface_type=partners&surface_version=redesign",
+    },
+    {
+      name: "Animation Cache",
+      description:
+        "This tool is particularly useful for character animation, physics simulations, and motion graphics, where smooth playback is essential for precise adjustments",
+      tags: [
+        {
+          name: "python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "blender API",
+          color: "pink-text-gradient",
+        }
+      ],
+      image: AnimCache,
+      source_code_link: "https://superhivemarket.com/products/animation-playback-cache",
+    },
+    {
+      name: "Camera FX PRO",
+      description:
+        "Camera FX Pro is a powerful Blender add-on designed to bring high-end cinematic camera effects to your 3D scenes—no complex rigging or manual keyframing required. ",
+      tags: [
+        {
+          name: "python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "blender API",
+          color: "pink-text-gradient",
+        }
+      ],
+      image: CameraFXPro,
+      source_code_link: "https://superhivemarket.com/products/-camera-fx-pro",
     }
+
   ];
   
   export { services, technologies, experiences, testimonials, projects };

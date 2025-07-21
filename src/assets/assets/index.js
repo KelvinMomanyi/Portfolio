@@ -29,6 +29,12 @@ import Yard from './Caryard2.PNG';
 import carrent from "./carrent.png";
 import jobit from "./ecom.png";
 import tripguide from "./tripguide.png";
+import AOVBOOST from './AOVBOOST.jpeg'
+import CarouselSlider from './Carousel_slider.png'
+import AnimCache from './AnimCache.jpg'
+import CameraFXPro from './CameraFXPro.png'
+import ShoesHive from './ShoesHive.png'
+import JohnDoe from './JohnDoe.JPG'
 
 export {
   logo,
@@ -61,5 +67,11 @@ export {
   tripguide,
   hotel,
   Law,
-  Yard
+  Yard,
+  AOVBOOST,
+  CarouselSlider,
+  AnimCache,
+  CameraFXPro,
+  ShoesHive,
+  JohnDoe
 };
